@@ -89,11 +89,13 @@ object-fit: cover;
 
 .feature-icon img{
     height: 45px;
+    width: auto;
 }
 
 /* Partners Section */
 .partners-section img{
     height: 80px;
+    width: auto;
 }
 
 .partners-section h3 {
