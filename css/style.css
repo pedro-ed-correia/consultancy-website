@@ -50,63 +50,123 @@
     font-family: 'Libre Baskerville', serif;
 }
 
-/* Hero buttons */
-.hero-overlay .btn-primary {
+/* Services Section */
+.services-section { 
+    background-color: var(--brand-bg);
+    color: var(--text-on-dark);
+}
+ 
+.services-section h2 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.card-img-top { 
+height: 240px;
+object-fit: cover;
+}
+ 
+.card-body {
+    font-family: 'Noto Serif', serif;
+    color: var(--brand-bg)
+}
+
+
+/* Values Section */
+.values-section .feature-icon { 
+    background-color: var(--brand-accent); 
+}
+ 
+.values-section {
+    font-family: "Noto Serif", serif;
+    color: var(--brand-bg);
+
+}
+
+.values-section h2 {
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+.feature-icon img{
+    height: 45px;
+}
+
+/* Partners Section */
+.partners-section img{
+    height: 80px;
+}
+
+.partners-section h3 {
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+/* buttons */
+.btn-primary {
     background-color: var(--brand-accent);
     border-color: var(--brand-accent);
     color: var(--brand-bg);
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.hero-overlay .btn-primary:hover,
-.hero-overlay .btn-primary:focus {
+.btn-primary:hover,
+.btn-primary:focus {
     background-color: var(--text-on-dark);
     color: var(--brand-accent);
     transform: translateY(-2px);
 }
 
-.hero-overlay .btn-outline-secondary { 
+.btn-outline-secondary { 
     color: var(--text-on-dark);
     border-color: var(--text-on-dark);
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.hero-overlay .btn-outline-secondary:hover,
-.hero-overlay .btn-outline-secondary:focus {
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
     background-color: var(--text-on-dark);
     color: var(--brand-bg);
     transform: translateY(-2px);
 } 
 
-/* Services Section */
-.service-card {
-    border: 0;
-    border-radius: 0.6rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(255,255,255,0.02);
-    transition: transform 0.18s, box-shadow 0.18s;
+.btn-secondary {
+    background-color: var(--brand-bg);
+    border-color: var(--brand-bg);
+    color: var(--text-on-dark);
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.service-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(2,6,23,0.35);
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: var(--text-on-dark);
+    color: var(--brand-bg);
+    transform: translateY(-2px);
 }
 
-.service-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+
+
+.footer-dark {
+    background-color: var(--brand-bg);
+    color: var(--text-on-dark);
+    font-family: 'Noto Serif', serif;
 }
 
-.service-card .card-body {
-    padding: 1.25rem;
-    flex: 1;
-    background: transparent;
+.footer-dark .brand {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--brand-accent);
+    letter-spacing: 0.05em;
 }
 
-.service-card .card-title {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+.footer-dark a.footer-link {
+    color: var(--text-on-dark);
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.footer-dark a.footer-link:hover {
+    color: var(--brand-accent);
+    text-decoration: none;
 }

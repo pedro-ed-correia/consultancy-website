@@ -56,63 +56,126 @@
         </section>
 
         <!-- Services Section -->
-        <section class="py-5 header-dark">
-            <div class="container text-white">
-                <h2 class="mb-4">Os nossos serviços</h2>
+        <section class="py-5 services-section">
+            <div class="container">
+                <h2 class="mb-5">Os nossos serviços</h2>
                 
-                <div class="row g-4">
-                    <!-- Service 1: Projetos AVAC -->
-                    <article class="col-12 col-md-6" aria-labelledby="service-avac">
-                        <div class="card h-100 service-card">
-                            <figure class="ratio ratio-16x9 m-0">
-                                <!-- Replace ./images/service-hvac.jpg with your professional image file -->
-                                <img src="./images/AVAC.webp"
-                                     srcset="./images/service-hvac@2x.jpg 2x"
-                                     class="card-img-top service-img"
-                                     alt="Técnico a trabalhar em sistema AVAC"
-                                     loading="lazy">
-                            </figure>
-
+                <div class="row row-cols-1 row-cols-md-2 mb-3 g-5">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <!-- image full width, same height, rounded top corners -->
+                            <img src="./images/Certificado Energetico.webp" class="card-img-top rounded-top"
+                                alt="Projetos AVAC">
+        
                             <div class="card-body">
-                                <h3 id="service-avac" class="card-title">Projetos AVAC</h3>
-                                <p class="card-text">Desenvolvemos projetos completos de aquecimento, ventilação e ar condicionado — desde estudo prévio até acompanhamento de obra. Cumprimos normas e boas práticas técnicas.</p>
-                                <ul class="list-unstyled mb-3">
-                                    <li>Dimensionamento e especificação de equipamentos</li>
-                                    <li>Desenho técnico e documentação para licenciamento</li>
-                                    <li>Acompanhamento e fiscalização de obra</li>
-                                </ul>
-                                <a href="#contact" class="btn btn-primary">Solicitar orçamento</a>
+                                <!-- moved h3 below image as requested -->
+                                <h3 class="my-0">Projetos AVAC</h3>
+                                <p class="mt-2">Formulaçao e aprovamento de projetos AVAC de acordo com a norma blabla.</p>
+        
+                                <!-- push button to bottom -->
+                                <div class="mt-auto">
+                                    <button type="button" class="btn btn-lg btn-secondary px-5">Saber mais</button>
+                                </div>
                             </div>
                         </div>
-                    </article>
-
-                    <!-- Service 2: Certificados Energéticos -->
-                    <article class="col-12 col-md-6" aria-labelledby="service-energy">
-                        <div class="card h-100 service-card">
-                            <figure class="ratio ratio-16x9 m-0">
-                                <!-- Replace ./images/service-energy.jpg with your professional image file -->
-                                <img src="./images/Certificado Energetico.webp"
-                                     srcset="./images/service-energy@2x.jpg 2x"
-                                     class="card-img-top service-img"
-                                     alt="Documento de certificado energético sobre mesa"
-                                     loading="lazy">
-                            </figure>
-
+                    </div>
+        
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="./images/AVAC.webp" class="card-img-top rounded-top" alt="Certificados Energeticos">
+        
                             <div class="card-body">
-                                <h3 id="service-energy" class="card-title">Certificados Energéticos</h3>
-                                <p class="card-text">Emitimos certificados energéticos de habitação e comércio com rapidez e fiabilidade, e aconselhamento sobre medidas de melhoria de eficiência.</p>
-                                <ul class="list-unstyled mb-3">
-                                    <li>Inspeção e análise in loco</li>
-                                    <li>Relatório técnico e etiqueta energética</li>
-                                    <li>Recomendações de melhoria de desempenho</li>
-                                </ul>
-                                <a href="#contact" class="btn btn-primary">Agendar inspeção</a>
+                                <h3 class="my-0">Certificados Energeticos</h3>
+                                <p class="mt-2">Formulacao de certificados energeticos de acordo com a norma blabla.</p>
+        
+                                <div class="mt-auto">
+                                    <button type="button" class="btn btn-lg btn-secondary px-5">Saber mais</button>
+                                </div>
                             </div>
                         </div>
-                    </article>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+
+        <section class="py-5 values-section">
+            <div class="container">
+                <h2 class="pb-2 border-bottom">O que nos distingue</h2>
+                <div class="row py-5 row-cols-1 row-cols-lg-3 g-5">
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex rounded-3 p-1">
+                            <img src="./images/trust.png">
+                        </div>
+                        <h3>Confiança</h3>
+                        <p>Trabalhamos com transparência total para que saiba sempre onde está o seu projeto.</p> 
+                    </div>
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex rounded-3 p-1">
+                            <img src="./images/responsability.png">
+                        </div>
+                        <h3>Responsabilidade</h3>
+                        <p>Cumprimos normas, prazos e compromissos, porque o seu conforto depende da nossa seriedade.</p>
+                    </div>
+                    <div class="feature col">
+                        <div class="feature-icon d-inline-flex rounded-3 p-1">
+                            <img src="./images/efficiency.png">
+                        </div>
+                        <h3>Rapidez</h3>
+                        <p>Processos otimizados para que o seu projeto avance sem demoras inúteis.</p> 
+                    </div>
                 </div>
             </div>
-        </section> 
-</body>
-</html>
+        </section>
 
+        <section class="py-5 partners-section">
+            <div class="container">
+                <h3 class="pb-2 border-bottom">De acordo com</h2>
+                <div class="row py-3 justify-content-center align-items-center g-4">
+                    <div class="col-6 col-md-4 col-lg-4 d-flex justify-content-center">
+                        <img src="./images/OA.webp" class="img-fluid" alt="OA Partner Logo">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-4 d-flex justify-content-center">
+                        <img src="./images/OE.jpg" class="img-fluid" alt="OE Partner Logo">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-4 d-flex justify-content-center">
+                        <img src="./images/PT.jpg" class="img-fluid" alt="PT Partner Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-5 footer-dark mt-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- About / Brand -->
+                    <div class="col text-center text-md-start">
+                        <h5 class="mb-3 brand">Projetos e Certificados, Lda.</h5>
+                        <p>Faça o seu projeto uma realidade conosco.</p>
+                    </div>
+        
+                    <!-- Contactos -->
+                    <div class="col text-center">
+                        <h5 class="mb-3">Contactos</h5>
+                        <ul class="list-unstyled">
+                            <li>Email: <a href="mailto:info@projetoscertificados.pt"
+                                    class="footer-link">info@projetoscertificados.pt</a></li>
+                            <li>Telefone: <a href="tel:+351123456789" class="footer-link">+351 123 456 789</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Encontre-nos -->
+                    <div class="col text-center text-md-end">
+                        <h5 class="mb-3">Encontre-nos</h5>
+                        <p>Rua Exemplo, 123<br>Lisboa, Portugal</p>
+                        <a href="https://goo.gl/maps/EXAMPLE" target="_blank" class="footer-link">Ver no mapa</a>
+                    </div>
+                </div>
+        
+                <hr class="my-4 border-light">
+                <p class="text-center mb-0">&copy; 2025 Projetos e Certificados, Lda. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
