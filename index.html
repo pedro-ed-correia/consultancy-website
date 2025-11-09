@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projetos e Certificados, Lda.</title>
+
+    <!-- Preconnects for fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Serif&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap (kept as your original CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Main stylesheet (update path as needed) -->
+    <link href="../css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="py-4 header-dark">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="./index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <!-- <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                    <use xlink:href="#bootstrap"></use>
+                </svg> -->
+                <span class="fs-6 brand">Projetos e Certificados, Lda.</span>
+            </a>
+
+            <nav class="nav" aria-label="Main navigation">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="./index.html" class="nav-link px-2 current" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2">Serviços</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2">Sobre</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2">Contactos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main id="main">
+    <!-- Hero Section -->
+        <section class="position-relative hero-section">
+            <!-- Overlay (gradient + content) -->
+            <div class="position-absolute top-0 start-0 end-0 bottom-0 d-flex align-items-center hero-overlay">
+                <div class="container py-5">
+                    <p class="lead">Comece o seu processo conosco hoje</p>
+                    <h1 class="display-5 fw-bold lh-1 mb-4">Projetos AVAC e Certificados Energéticos</h1>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="#" class="btn btn-primary btn-lg px-4 gap-3">Peça o seu orçamento</a>
+                        <a href="#" class="btn btn-outline-secondary btn-lg px-4">Contacte-nos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-5 header-dark">
+            <div class="container text-white">
+                <h2 class="mb-4">Os nossos serviços</h2>
+                
+                <div class="row g-4">
+                    <!-- Service 1: Projetos AVAC -->
+                    <article class="col-12 col-md-6" aria-labelledby="service-avac">
+                        <div class="card h-100 service-card">
+                            <figure class="ratio ratio-16x9 m-0">
+                                <!-- Replace ../images/service-hvac.jpg with your professional image file -->
+                                <img src="../images/AVAC.webp"
+                                     srcset="../images/service-hvac@2x.jpg 2x"
+                                     class="card-img-top service-img"
+                                     alt="Técnico a trabalhar em sistema AVAC"
+                                     loading="lazy">
+                            </figure>
+
+                            <div class="card-body">
+                                <h3 id="service-avac" class="card-title">Projetos AVAC</h3>
+                                <p class="card-text">Desenvolvemos projetos completos de aquecimento, ventilação e ar condicionado — desde estudo prévio até acompanhamento de obra. Cumprimos normas e boas práticas técnicas.</p>
+                                <ul class="list-unstyled mb-3">
+                                    <li>Dimensionamento e especificação de equipamentos</li>
+                                    <li>Desenho técnico e documentação para licenciamento</li>
+                                    <li>Acompanhamento e fiscalização de obra</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary">Solicitar orçamento</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Service 2: Certificados Energéticos -->
+                    <article class="col-12 col-md-6" aria-labelledby="service-energy">
+                        <div class="card h-100 service-card">
+                            <figure class="ratio ratio-16x9 m-0">
+                                <!-- Replace ../images/service-energy.jpg with your professional image file -->
+                                <img src="../images/Certificado Energetico.webp"
+                                     srcset="../images/service-energy@2x.jpg 2x"
+                                     class="card-img-top service-img"
+                                     alt="Documento de certificado energético sobre mesa"
+                                     loading="lazy">
+                            </figure>
+
+                            <div class="card-body">
+                                <h3 id="service-energy" class="card-title">Certificados Energéticos</h3>
+                                <p class="card-text">Emitimos certificados energéticos de habitação e comércio com rapidez e fiabilidade, e aconselhamento sobre medidas de melhoria de eficiência.</p>
+                                <ul class="list-unstyled mb-3">
+                                    <li>Inspeção e análise in loco</li>
+                                    <li>Relatório técnico e etiqueta energética</li>
+                                    <li>Recomendações de melhoria de desempenho</li>
+                                </ul>
+                                <a href="#contact" class="btn btn-primary">Agendar inspeção</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section> 
+</body>
+</html>
