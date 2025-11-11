@@ -119,51 +119,8 @@
 
 }
 
-/* buttons */
-.btn-primary {
-    background-color: var(--brand-accent);
-    border-color: var(--brand-accent);
-    color: var(--brand-bg);
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
 
-.btn-primary:hover,
-.btn-primary:focus {
-    background-color: var(--text-on-dark);
-    color: var(--brand-accent);
-    transform: translateY(-2px);
-}
-
-.btn-outline-secondary { 
-    color: var(--text-on-dark);
-    border-color: var(--text-on-dark);
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.btn-outline-secondary:hover,
-.btn-outline-secondary:focus {
-    background-color: var(--text-on-dark);
-    color: var(--brand-bg);
-    transform: translateY(-2px);
-} 
-
-.btn-secondary {
-    background-color: var(--brand-bg);
-    border-color: var(--brand-bg);
-    color: var(--text-on-dark);
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-    background-color: var(--text-on-dark);
-    color: var(--brand-bg);
-    transform: translateY(-2px);
-}
-
-
-
-
+/* Footer Section */
 .footer-section {
     background-color: var(--brand-bg);
     color: var(--text-on-dark);
@@ -190,4 +147,43 @@
 .footer-section a.footer-link:hover {
     color: var(--brand-accent);
     text-decoration: underline;
+}
+
+
+
+/* buttons */
+.custom-first { 
+  color: #ffffff; /* text color */
+  background-color: #C4B394; /* main button color */
+  border-color: #C4B394; /* main button border */
+}
+
+.custom-first:hover {
+  color: #ffffff; /* text color */
+  background-color: #a3946d; /* 10% darker */
+  border-color: #a3946d; /* 10% darker */
+}
+
+.custom-second { 
+  color: #ffffff; /* text color */
+  background-color:  #bebebe;; /* main button color */
+  border-color: #bebebe; /* main button border */
+}
+
+.custom-second:hover {
+  color: #ffffff; /* text color */
+  background-color: #969494; /* 10% darker */
+  border-color: #969494; /* 10% darker */
+}
+
+.custom-third { 
+  color: #ffffff; /* text color */
+  background-color:  #062439;; /* main button color */
+  border-color: #062439; /* main button border */
+}
+
+.custom-third:hover {
+  color: #ffffff; /* text color */
+  background-color: #020e18; /* 10% darker */
+  border-color: #020e18; /* 10% darker */
 }
