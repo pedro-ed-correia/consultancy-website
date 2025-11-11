@@ -6,30 +6,33 @@
 
 
 /* Header Section */
-.header-dark {
-    background-color: var(--brand-bg);
-    color: var(--text-on-dark);
+.header {
+    background-color: var(--brand-bg); 
 }
 
-.header-dark .brand {
+.header .brand {
     font-family: 'Libre Baskerville', serif;
-    font-weight: 700;
     text-transform: uppercase;
     color: var(--brand-accent);
     letter-spacing: 0.05em;
 }
 
-.header-dark .nav-link {
+.header .nav-link {
     font-family: 'Noto Serif', serif;
     color: var(--text-on-dark);
     transition: color 0.15s, text-decoration 0.15s;
 }
 
-.header-dark .nav-link.current,
-.header-dark .nav-link:hover,
-.header-dark .nav-link:focus {
+.header .nav-link.current,
+.header .nav-link:hover,
+.header .nav-link:focus {
     color: var(--brand-accent);
     text-decoration: underline;
+}
+
+.language-dropdown {
+    min-width: 2em; /* remove the 10rem default */
+    width: auto; /* shrink to fit content */
 }
 
 /* Hero Section */
@@ -38,12 +41,12 @@
     background-image: url("../images/Consultancy Service Hero.png");
     background-size: cover;  
     background-position: center; 
-    font-family: "Noto Serif", serif;
-    color: var(--text-on-dark);
 }
  
 .hero-overlay { 
     background: linear-gradient(180deg, rgba(6,36,57,0.55) 0%, rgba(6,36,57,0.65) 40%, rgba(6,36,57,0.75) 100%);
+    font-family: "Noto Serif", serif;
+    color: var(--text-on-dark);
 }
 
 .hero-overlay h1 {
@@ -60,9 +63,15 @@
     font-family: 'Libre Baskerville', serif;
 }
 
-.card-img-top { 
-height: 240px;
-object-fit: cover;
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .card-img-top {
+    height: 240px;
+  }
 }
  
 .card-body {
@@ -93,12 +102,19 @@ object-fit: cover;
 }
 
 /* Partners Section */
-.partners-section img{
-    height: 80px;
-    width: auto;
+.partners-section .partner-logo {
+  max-height: 80px; /* default for larger screens */
+  width: auto;      /* preserve aspect ratio */
 }
 
-.partners-section h3 {
+/* Make logos smaller on extra small screens */
+@media (max-width: 576px) {
+  .partners-section .partner-logo {
+    max-height: 60px;
+  }
+}
+
+.partners-section h4 {
     font-family: 'Libre Baskerville', serif;
 
 }
@@ -148,27 +164,30 @@ object-fit: cover;
 
 
 
-.footer-dark {
+.footer {
     background-color: var(--brand-bg);
     color: var(--text-on-dark);
     font-family: 'Noto Serif', serif;
 }
 
-.footer-dark .brand {
+.footer .brand {
     font-family: 'Libre Baskerville', serif;
-    font-weight: 700;
     text-transform: uppercase;
     color: var(--brand-accent);
     letter-spacing: 0.05em;
 }
 
-.footer-dark a.footer-link {
+.footer .slogan {
+    font-family: 'Libre Baskerville', serif;  
+}
+
+.footer a.footer-link {
     color: var(--text-on-dark);
     text-decoration: underline;
     transition: color 0.2s;
 }
 
-.footer-dark a.footer-link:hover {
+.footer a.footer-link:hover {
     color: var(--brand-accent);
-    text-decoration: none;
+    text-decoration: underline;
 }
