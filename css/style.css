@@ -6,31 +6,31 @@
 
 
 /* Header Section */
-.header {
+.header-section {
     background-color: var(--brand-bg); 
 }
 
-.header .brand {
+.header-section .brand {
     font-family: 'Libre Baskerville', serif;
     text-transform: uppercase;
     color: var(--brand-accent);
     letter-spacing: 0.05em;
 }
 
-.header .nav-link {
+.header-section .nav-link {
     font-family: 'Noto Serif', serif;
     color: var(--text-on-dark);
     transition: color 0.15s, text-decoration 0.15s;
 }
 
-.header .nav-link.current,
-.header .nav-link:hover,
-.header .nav-link:focus {
+.header-section .nav-link.current,
+.header-section .nav-link:hover,
+.header-section .nav-link:focus {
     color: var(--brand-accent);
     text-decoration: underline;
 }
 
-.language-dropdown {
+.header-section .language-dropdown {
     min-width: 2em; /* remove the 10rem default */
     width: auto; /* shrink to fit content */
 }
@@ -164,30 +164,30 @@
 
 
 
-.footer {
+.footer-section {
     background-color: var(--brand-bg);
     color: var(--text-on-dark);
     font-family: 'Noto Serif', serif;
 }
 
-.footer .brand {
+.footer-section .brand {
     font-family: 'Libre Baskerville', serif;
     text-transform: uppercase;
     color: var(--brand-accent);
     letter-spacing: 0.05em;
 }
 
-.footer .slogan {
+.footer-section .slogan {
     font-family: 'Libre Baskerville', serif;  
 }
 
-.footer a.footer-link {
+.footer-section a.footer-link {
     color: var(--text-on-dark);
     text-decoration: underline;
     transition: color 0.2s;
 }
 
-.footer a.footer-link:hover {
+.footer-section a.footer-link:hover {
     color: var(--brand-accent);
     text-decoration: underline;
 }
